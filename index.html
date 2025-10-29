@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOMOLD — Solar-Powered Plastic Recycling</title>
+    
+    <!-- Load Tailwind CSS for utility classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Link to custom CSS for fonts and specific elements -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Load Lucide Icons and create them once the document is ready -->
+    <script type="module">
+        import { createIcons } from 'https://unpkg.com/lucide@latest/dist/esm/lucide.js';
+        document.addEventListener('DOMContentLoaded', () => {
+            // This processes all elements with data-lucide attributes
+            createIcons(); 
+        });
+    </script>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Hero Section -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-gray-800 flex items-center">
+                <i data-lucide="recycle" class="w-8 h-8 mr-2 text-green-500"></i>
+                ECOMOLD
+            </h1>
+            <span class="text-sm font-medium text-gray-500 hidden sm:block">Solar-Powered Plastic Recycling & Molding Machine</span>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+
+        <!-- Introduction Section -->
+        <section id="introduction" class="mb-12 bg-white p-6 md:p-10 rounded-xl shadow-2xl shadow-green-100/50">
+            <h2 class="section-title text-3xl font-bold text-gray-800">Project Overview</h2>
+            <p class="text-lg text-gray-600 mb-4">
+                ECOMOLD is an innovative, solar-powered system designed to transform plastic waste into useful products while fostering environmental responsibility in the younger generation. It addresses the global challenge of plastic pollution with a sustainable, educational, and incentive-based approach.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center mt-8">
+                <div class="p-4 rounded-xl bg-green-50">
+                    <i data-lucide="leaf" class="w-8 h-8 mx-auto text-green-500 mb-2"></i>
+                    <p class="font-bold text-lg">Waste Reduction</p>
+                    <p class="text-sm text-gray-600">Transforms plastic into new items.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-yellow-50">
+                    <i data-lucide="sun" class="w-8 h-8 mx-auto text-yellow-500 mb-2"></i>
+                    <p class="font-bold text-lg">Solar Sustainability</p>
+                    <p class="text-sm text-gray-600">Minimizes reliance on conventional grid power.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-blue-50">
+                    <i data-lucide="activity" class="w-8 h-8 mx-auto text-blue-500 mb-2"></i>
+                    <p class="font-bold text-lg">Child Awareness</p>
+                    <p class="text-sm text-gray-600">Incentive-based system for learning.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Highlight Section -->
+        <section id="problems" class="mb-12">
+            <h2 class="section-title text-3xl font-bold text-gray-800">Problems Caused by Plastic Waste</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                <!-- Problem Card 1 -->
+                <div class="card bg-white p-6 rounded-xl shadow-md border-t-4 border-green-500">
+                    <i data-lucide="leaf" class="w-6 h-6 text-green-500 mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Soil Degradation</h3>
+                    <p class="text-gray-600 text-sm">Hinders water absorption and air circulation, severely affecting soil fertility.</p>
+                </div>
+                <!-- Problem Card 2 -->
+                <div class="card bg-white p-6 rounded-xl shadow-md border-t-4 border-blue-500">
+                    <i data-lucide="drop" class="w-6 h-6 text-blue-500 mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Water Pollution</h3>
+                    <p class="text-gray-600 text-sm">Discards harm aquatic life and disrupt delicate marine and freshwater ecosystems.</p>
+                </div>
+                <!-- Problem Card 3 -->
+                <div class="card bg-white p-6 rounded-xl shadow-md border-t-4 border-red-500">
+                    <i data-lucide="zap" class="w-6 h-6 text-red-500 mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Air Pollution</h3>
+                    <p class="text-gray-600 text-sm">Burning plastic releases toxic gases, contributing to smog and respiratory health issues.</p>
+                </div>
+                <!-- Problem Card 4 -->
+                <div class="card bg-white p-6 rounded-xl shadow-md border-t-4 border-gray-500">
+                    <i data-lucide="activity" class="w-6 h-6 text-gray-500 mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Wildlife Hazard</h3>
+                    <p class="text-gray-600 text-sm">Animals often ingest waste or become entangled, leading to injury or death.</p>
+                </div>
+                <!-- Problem Card 5 -->
+                <div class="card bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500">
+                    <i data-lucide="factory" class="w-6 h-6 text-orange-500 mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Human Health Risks</h3>
+                    <p class="text-gray-600 text-sm">Microplastics in water and food pose long-term, severe health risks.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Simulation & System Design Section -->
+        <section id="simulation" class="mb-12 bg-white p-6 md:p-10 rounded-xl shadow-2xl">
+            <h2 class="section-title text-3xl font-bold text-gray-800 mb-6">Interactive System Simulation</h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Automation Phases Display -->
+                <div class="lg:col-span-2">
+                    <h3 class="text-xl font-bold text-gray-700 mb-4 flex items-center"><i data-lucide="activity" class="w-5 h-5 mr-2"></i> Automation Phases</h3>
+                    <div class="flex flex-wrap justify-between items-start gap-4 mb-8">
+                        <!-- Step 1: Plastic Detection -->
+                        <div id="step-1" class="phase-step p-4 text-center rounded-xl border border-gray-300 w-full sm:w-[48%] lg:w-[18%] bg-gray-50">
+                            <i data-lucide="recycle" class="w-6 h-6 mx-auto mb-1 text-gray-500"></i>
+                            <p class="text-xs font-semibold">1. Detect</p>
+                            <p class="text-[0.6rem] text-gray-500">IR Sensor</p>
+                        </div>
+                        <div class="hidden lg:block self-center"><i data-lucide="arrow-right" class="w-4 h-4 text-gray-400"></i></div>
+
+                        <!-- Step 2: Shredding Simulation -->
+                        <div id="step-2" class="phase-step p-4 text-center rounded-xl border border-gray-300 w-full sm:w-[48%] lg:w-[18%] bg-gray-50">
+                            <i data-lucide="zap" class="w-6 h-6 mx-auto mb-1 text-gray-500"></i>
+                            <p class="text-xs font-semibold">2. Shred</p>
+                            <p class="text-[0.6rem] text-gray-500">Servo/LED</p>
+                        </div>
+                        <div class="hidden lg:block self-center"><i data-lucide="arrow-right" class="w-4 h-4 text-gray-400"></i></div>
+
+                        <!-- Step 3: Melting/Filtration -->
+                        <div id="step-3" class="phase-step p-4 text-center rounded-xl border border-gray-300 w-full sm:w-[48%] lg:w-[18%] bg-gray-50">
+                            <i data-lucide="activity" class="w-6 h-6 mx-auto mb-1 text-gray-500"></i>
+                            <p class="text-xs font-semibold">3. Melt/Filter</p>
+                            <p class="text-[0.6rem] text-gray-500">Conceptual</p>
+                        </div>
+                        <div class="hidden lg:block self-center"><i data-lucide="arrow-right" class="w-4 h-4 text-gray-400"></i></div>
+
+                        <!-- Step 4: Molding Process -->
+                        <div id="step-4" class="phase-step p-4 text-center rounded-xl border border-gray-300 w-full sm:w-[48%] lg:w-[18%] bg-gray-50">
+                            <i data-lucide="factory" class="w-6 h-6 mx-auto mb-1 text-gray-500"></i>
+                            <p class="text-xs font-semibold">4. Mold</p>
+                            <p class="text-[0.6rem] text-gray-500">Servos</p>
+                        </div>
+                        <div class="hidden lg:block self-center"><i data-lucide="arrow-right" class="w-4 h-4 text-gray-400"></i></div>
+
+                        <!-- Step 5: Reward System -->
+                        <div id="step-5" class="phase-step p-4 text-center rounded-xl border border-gray-300 w-full sm:w-[48%] lg:w-[18%] bg-gray-50">
+                            <i data-lucide="check-circle" class="w-6 h-6 mx-auto mb-1 text-gray-500"></i>
+                            <p class="text-xs font-semibold">5. Reward</p>
+                            <p class="text-[0.6rem] text-gray-500">Buzzer/LCD</p>
+                        </div>
+                    </div>
+
+                    <p class="text-sm text-gray-600 mt-4">This sequence is triggered by sensor input and automated timing, demonstrating the end-to-end recycling process.</p>
+                </div>
+
+                <!-- Simulation Control Panel -->
+                <div class="lg:col-span-1 bg-gray-50 p-6 rounded-xl border border-gray-200">
+                    <h3 class="text-xl font-bold text-gray-700 mb-4 flex items-center"><i data-lucide="speaker" class="w-5 h-5 mr-2"></i> Machine Status</h3>
+                    
+                    <!-- LCD Display Simulation -->
+                    <div id="lcd-display" class="lcd-display p-4 flex items-center justify-center text-center text-2xl font-bold mb-6">
+                        SYSTEM READY
+                    </div>
+
+                    <!-- Control Button -->
+                    <button id="simulate-btn" class="w-full py-3 px-6 bg-green-500 hover:bg-green-600 text-white font-bold rounded-xl shadow-lg shadow-green-200 transition duration-300 disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center">
+                        <i data-lucide="recycle" class="w-6 h-6 mr-2"></i>
+                        START RECYCLING CYCLE
+                    </button>
+                    <button id="reset-btn" class="w-full mt-3 py-2 px-6 bg-gray-200 hover:bg-gray-300 text-gray-700 font-semibold rounded-xl transition duration-300 flex items-center justify-center" disabled>
+                        <i data-lucide="x-circle" class="w-4 h-4 mr-2"></i>
+                        Reset
+                    </button>
+
+                    <p class="text-xs text-gray-500 mt-4 text-center">Click the button to simulate the five-phase ECOMOLD recycling process.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Impact and Sustainability Section -->
+        <section id="impact" class="mb-12">
+            <h2 class="section-title text-3xl font-bold text-gray-800">Impact & Sustainability</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Social Impact Card -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-500">
+                    <h3 class="text-xl font-bold text-gray-700 mb-3 flex items-center"><i data-lucide="activity" class="w-6 h-6 mr-2 text-blue-500"></i> Social Impact & Awareness</h3>
+                    <p class="text-gray-600 mb-4">
+                        The core feature of ECOMOLD is its focus on **child participation**. By offering toys molded from recycled materials in exchange for collected waste, the system fosters a direct link between cleanliness, recycling, and reward. This instills lifelong environmental values and responsible habits in young minds, creating future environmental ambassadors.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 text-sm ml-4">
+                        <li>Incentive-based system for children.</li>
+                        <li>Hands-on experience in waste management.</li>
+                        <li>Promotes cleanliness drives in schools/communities.</li>
+                    </ul>
+                </div>
+
+                <!-- Sustainability Card -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-yellow-500">
+                    <h3 class="text-xl font-bold text-gray-700 mb-3 flex items-center"><i data-lucide="sun" class="w-6 h-6 mr-2 text-yellow-500"></i> Power Sustainability (Solar)</h3>
+                    <p class="text-gray-600 mb-4">
+                        The reliance on **solar energy** is a key differentiator. This integration promotes sustainable energy use, minimizes conventional power dependence, and ensures portability. ECOMOLD is ideal for remote or energy-scarce communities, promoting green technologies through practical, accessible application.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 text-sm ml-4">
+                        <li>Eco-friendly and cost-effective operation.</li>
+                        <li>Ideal for remote/energy-scarce areas.</li>
+                        <li>Powers motors, sensors, and displays.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section id="conclusion" class="bg-green-600 p-8 rounded-xl shadow-2xl text-white">
+            <h2 class="text-3xl font-bold mb-4">Conclusion: A Greener Future</h2>
+            <p class="text-lg">
+                ECOMOLD successfully merges technology, sustainability, and social responsibility. By transforming plastic waste into useful products and positively engaging the younger generation, it offers a practical, scalable solution for cleaner, greener communities. This initiative proves that with the right tools, small projects can drive meaningful change.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-4 mt-8">
+        <div class="max-w-7xl mx-auto text-center text-sm">
+            &copy; 2024 ECOMOLD Project. Promoting Sustainability and Environmental Awareness.
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script> 
+
+</body>
+</html>
+
+  
